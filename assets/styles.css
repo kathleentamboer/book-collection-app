@@ -1,0 +1,329 @@
+html, body, h1, ul, li, div, img, h2, h3, form, input, span, footer, a, h4, input, form, main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* clear fix */
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  max-width: 1000px;
+  font-size: 20px;
+  margin: 0 auto;
+  color: #979797;
+  letter-spacing: 1px;
+}
+
+.search-bar a:hover {
+  color: inherit;
+}
+
+header a:hover {
+  color: #3F98FF;
+  border-bottom: 5px solid #3F98FF;
+}
+
+header li:last-child:before {
+  content: "+  ";
+}
+
+
+.active {
+  color: #3F98FF;
+}
+
+header {
+  padding: 2em 0 3em 0;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #979797;
+}
+
+h1 {
+  float: left;
+}
+
+header ul {
+  float: right;
+}
+
+header li {
+  float: left;
+  padding: 0 0 0 1.5em;
+}
+
+header li:first-child {
+  padding-left: 1.5em;
+  background: url('search.png') no-repeat 25px 25px;
+  background-size: 10%;
+}
+
+/* Book */
+
+.book {
+  float: left;
+  padding: 1em 1em 1em 0;
+}
+
+.book:nth-child(4n) {
+  padding-right: 0;
+}
+
+.book > h2, h3, h4 {
+  font-size: 25px;
+  width: 235px;
+}
+
+.book a {
+  display: block;
+}
+
+.book img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 235px;
+  height: 335px;
+  border: 1px solid #f1f1f1;
+  transition: top 0.2s, left 0.2s, box-shadow 0.2s;
+}
+
+.book:hover img {
+  cursor: pointer;
+  top: -15px;
+  left: 15px;
+  box-shadow: -15px 15px 0 #3F98FF,
+  -14.5px 14.5px 0 #3F98FF,
+  -14px 14px 0 #3F98FF,
+  -13.5px 13.5px 0 #3F98FF,
+  -13px 13px 0 #3F98FF,
+  -12.5px 12.5px 0 #3F98FF,
+  -12px 12px 0 #3F98FF,
+  -11.5px 11.5px 0 #3F98FF,
+  -11px 11px 0 #3F98FF,
+  -10.5px 10.5px 0 #3F98FF,
+  -10px 10px 0 #3F98FF,
+  -9.5px 9.5px 0 #3F98FF,
+  -9px 9px 0 #3F98FF,
+  -8.5px 8.5px 0 #3F98FF,
+  -8px 8px 0 #3F98FF,
+  -7.5px 7.5px 0 #3F98FF,
+  -7px 7px 0 #3F98FF,
+  -6.5px 6.5px 0 #3F98FF,
+  -6px 6px 0 #3F98FF,
+  -5.5px 5.5px 0 #3F98FF,
+  -5px 5px 0 #3F98FF,
+  -4.5px 4.5px 0 #3F98FF,
+  -4px 4px 0 #3F98FF,
+  -3.5px 3.5px 0 #3F98FF,
+  -3px 3px 0 #3F98FF,
+  -2.5px 2.5px 0 #3F98FF,
+  -2px 2px 0 #3F98FF,
+  -1.5px 1.5px 0 #3F98FF,
+  -1px 1px 0 #3F98FF,
+  -0.5px 0.5px 0 #3F98FF;
+  border: 1px solid #979797;
+  z-index: 1;
+}
+
+h3 {
+  color: #3F98FF;
+  padding: 0.5em 0 0 0;
+}
+
+.none img {
+  float: left;
+  width: 30%;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 3em;
+}
+
+.details {
+  padding: 1em 0;
+}
+
+.text {
+  float: left;
+  padding: 0 1em;
+  width: 70%;
+}
+
+.add {
+  color: black;
+}
+
+.text p {
+  margin-top: 0em;
+}
+
+input {
+  background: #f1f1f1;
+  width: 100%;
+  height: 50px;
+}
+
+input[type=search] {
+  display: block;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  position: relative;
+  left: -1em;
+  height: 10px;
+  width: 10px;
+}
+
+input::-webkit-search-cancel-button:after {
+  content: "CANCEL";
+  position: relative;
+  top: -0.5em;
+  left: -2.5em;
+  color: #979797;
+}
+
+input:focus {
+  outline: 0;
+  color: #3F98FF;
+  background: #f1f1f1 !important;
+}
+
+form .search-bar {
+  display: none;
+}
+
+form:active .search-bar {
+  display: block;
+}
+
+.search-bar > a {
+  display: block;
+  padding: 0.5em 0 0.5em 1.25em;
+  background: #979797;
+  border-bottom: 1px solid #f1f1f1;
+  color: #f1f1f1;
+}
+
+.search-bar > a:hover {
+  background: #3F98FF;
+  color: white;
+}
+
+.results img {
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+  width: 235px;
+  height: 335px;
+  margin-top: 1em;
+  border: 1px solid #f1f1f1;
+  transition: top 0.2s, left 0.2s, box-shadow 0.2s;
+}
+
+.results img:hover {
+  position: relative;
+  top: -15px;
+  left: 15px;
+  cursor: pointer;
+  top: -15px;
+  left: 15px;
+  box-shadow: -15px 15px 0 #3F98FF,
+  -14.5px 14.5px 0 #3F98FF,
+  -14px 14px 0 #3F98FF,
+  -13.5px 13.5px 0 #3F98FF,
+  -13px 13px 0 #3F98FF,
+  -12.5px 12.5px 0 #3F98FF,
+  -12px 12px 0 #3F98FF,
+  -11.5px 11.5px 0 #3F98FF,
+  -11px 11px 0 #3F98FF,
+  -10.5px 10.5px 0 #3F98FF,
+  -10px 10px 0 #3F98FF,
+  -9.5px 9.5px 0 #3F98FF,
+  -9px 9px 0 #3F98FF,
+  -8.5px 8.5px 0 #3F98FF,
+  -8px 8px 0 #3F98FF,
+  -7.5px 7.5px 0 #3F98FF,
+  -7px 7px 0 #3F98FF,
+  -6.5px 6.5px 0 #3F98FF,
+  -6px 6px 0 #3F98FF,
+  -5.5px 5.5px 0 #3F98FF,
+  -5px 5px 0 #3F98FF,
+  -4.5px 4.5px 0 #3F98FF,
+  -4px 4px 0 #3F98FF,
+  -3.5px 3.5px 0 #3F98FF,
+  -3px 3px 0 #3F98FF,
+  -2.5px 2.5px 0 #3F98FF,
+  -2px 2px 0 #3F98FF,
+  -1.5px 1.5px 0 #3F98FF,
+  -1px 1px 0 #3F98FF,
+  -0.5px 0.5px 0 #3F98FF;
+  border: 1px solid #979797;
+  z-index: 1;
+}
+
+.results ul {
+  width: 235px;
+  height: 325px;
+  float: left;
+  margin: 1.5em 0.5em 0.5em 1em;
+}
+
+.results li:nth-child(2) {
+  color: black;
+  margin-top: 0.5em;
+}
+
+.results a {
+  color: #3F98FF;
+}
+
+.results a:hover {
+  border-bottom: 3px solid #3F98FF;
+}
+
+.results-page input {
+  background: #3F98FF;
+}
+
+.results-page input::-webkit-input-placeholder {
+   color: white;
+}
+
+.results-page input:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+.results-page input::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+.results-page input:-ms-input-placeholder {
+   color: white;
+}
