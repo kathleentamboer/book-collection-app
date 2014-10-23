@@ -38,10 +38,6 @@ body {
   letter-spacing: 1px;
 }
 
-.search-bar a:hover {
-  color: inherit;
-}
-
 header a:hover {
   color: #3F98FF;
   border-bottom: 5px solid #3F98FF;
@@ -51,6 +47,9 @@ header li:last-child:before {
   content: "+  ";
 }
 
+header li:last-child:hover {
+  color: #3F98FF;
+}
 
 .active {
   color: #3F98FF;
@@ -78,6 +77,18 @@ header li {
 
 header li:first-child {
   padding-left: 1.5em;
+  background: url('search2.png') no-repeat 25px 25px;
+  background-size: 10%;
+}
+
+header li:first-child:hover {
+  padding-left: 1.5em;
+  background: url('search.png') no-repeat 25px 25px;
+  background-size: 10%;
+}
+
+.blue li:first-child {
+  padding-left: 1.5em;
   background: url('search.png') no-repeat 25px 25px;
   background-size: 10%;
 }
@@ -93,7 +104,7 @@ header li:first-child {
   padding-right: 0;
 }
 
-.book > h2, h3, h4 {
+.book h2, h3, h4 {
   font-size: 25px;
   width: 235px;
 }
@@ -222,7 +233,7 @@ form:active .search-bar {
   display: block;
 }
 
-.search-bar > a {
+.autocomplete a {
   display: block;
   padding: 0.5em 0 0.5em 1.25em;
   background: #979797;
@@ -230,7 +241,7 @@ form:active .search-bar {
   color: #f1f1f1;
 }
 
-.search-bar > a:hover {
+.autocomplete a:hover {
   background: #3F98FF;
   color: white;
 }
@@ -326,4 +337,65 @@ form:active .search-bar {
 
 .results-page input:-ms-input-placeholder {
    color: white;
+}
+
+#clear {
+  position: absolute;
+  top: 6.5em;
+  background: transparent;
+  width: 1000px;
+  padding: 15em 0em;
+  z-index: -1;
+}
+
+#added {
+  color: black;
+}
+
+#added-book {
+  color: #3F98FF;
+}
+
+.alphabet li {
+  display: block;
+  float: left;
+  margin: 0.5em 1em 1em 0;
+  height: 1.75em;
+}
+
+.alphabet li:hover {
+  color: #3F98FF;
+  cursor: pointer;
+  border-bottom: 4px solid #3F98FF;
+}
+
+.sort li {
+  float: left;
+  margin: 0 1em 0 0;
+  height: 1.75em;
+}
+
+.sort li:hover {
+  color: #3F98FF;
+  cursor: pointer;
+  border-bottom: 4px solid #3F98FF;
+}
+
+.T {
+  color: #3F98FF;
+  border-bottom: 4px solid #3F98FF;
+}
+
+#not-sort {
+  color: #979797;
+}
+
+#not-sort:hover {
+  cursor: default;
+  border-bottom: none;
+}
+
+.default {
+  color: #3F98FF;
+  border-bottom: 4px solid #3F98FF;
 }
