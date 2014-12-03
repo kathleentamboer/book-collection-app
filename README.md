@@ -1,4 +1,4 @@
-book-collection-app
+Boek Der Boken
 ===================
 
-Click to view [The Book Collection App](http://kathleentamboer.com/book-collection-app).
+Visit [The Book Collection App](http://kathleentamboer.com/book-collection-app).
