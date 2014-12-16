@@ -1,15 +1,12 @@
 html, body, h1, ul, li, div, img, h2, h3, form, input, span, footer, a, h4, input, form, main {
+  background: transparent;
+  border: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
   margin: 0;
   padding: 0;
-  border: 0;
-  font: inherit;
-  color: inherit;
-  background: transparent;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 ul {
@@ -18,21 +15,21 @@ ul {
 
 img {
   display: block;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 /* clear fix */
 .group:after {
+  clear: both;
   content: "";
   display: block;
-  clear: both;
 }
 
 body {
+  color: #979797;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  color: #979797;
   letter-spacing: 1px;
 }
 
@@ -43,8 +40,8 @@ body {
 }
 
 header a:hover {
-  color: #3F98FF;
   border-bottom: 5px solid #3F98FF;
+  color: #3F98FF;
 }
 
 header li:last-child:before {
@@ -60,10 +57,10 @@ header li:last-child:hover {
 }
 
 header {
-  padding: 1em 0 3em 0;
-  font-size: 35px;
-  text-transform: uppercase;
   color: #979797;
+  font-size: 35px;
+  padding: 1em 0 3em 0;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -80,21 +77,21 @@ header li {
 }
 
 header li:first-child {
-  padding-left: 1.5em;
   background: url('search2.png') no-repeat 25px 25px;
   background-size: 10%;
+  padding-left: 1.5em;
 }
 
 header li:first-child:hover {
-  padding-left: 1.5em;
   background: url('search.png') no-repeat 25px 25px;
   background-size: 10%;
+  padding-left: 1.5em;
 }
 
 .blue li:first-child {
-  padding-left: 1.5em;
   background: url('search.png') no-repeat 25px 25px;
   background-size: 10%;
+  padding-left: 1.5em;
 }
 
 /* Book */
@@ -105,9 +102,9 @@ header li:first-child:hover {
 
 .book {
   float: left;
+  height: 600px;
   padding: 1em 1em 1em 0;
   width: 25.41%;
-  height: 600px;
 }
 
 .book:nth-child(4n) {
@@ -127,17 +124,14 @@ header li:first-child:hover {
 }
 
 .book img {
+  border: 1px solid #f1f1f1;
+  left: 0;
   position: relative;
   top: 0;
-  left: 0;
-  border: 1px solid #f1f1f1;
-  transition: top 0.2s, left 0.2s, box-shadow 0.2s;
+  transition: top 0.2s, left 0.2s,     box-shadow 0.2s;
 }
 
 .book:hover img {
-  cursor: pointer;
-  top: -15px;
-  left: 15px;
   box-shadow: -15px 15px 0 #3F98FF,
   -14.5px 14.5px 0 #3F98FF,
   -14px 14px 0 #3F98FF,
@@ -169,6 +163,9 @@ header li:first-child:hover {
   -1px 1px 0 #3F98FF,
   -0.5px 0.5px 0 #3F98FF;
   border: 1px solid #979797;
+  cursor: pointer;
+  top: -15px;
+  left: 15px;
   z-index: 1;
 }
 
@@ -178,10 +175,10 @@ h3 {
 }
 
 .none img {
-  float: left;
-  width: 30%;
   border: 1px solid #f1f1f1;
+  float: left;
   margin-bottom: 3em;
+  width: 30%;
 }
 
 .details {
@@ -204,14 +201,14 @@ h3 {
 
 input {
   background: #f1f1f1;
-  width: 100%;
   height: 50px;
+  width: 100%;
 }
 
 input[type=search] {
   display: block;
-  width: 100%;
   letter-spacing: 1px;
+  width: 100%;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -219,25 +216,25 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 input::-webkit-search-cancel-button:after {
+  color: #979797;
   content: "CANCEL";
+  left: -1em;
   position: relative;
   top: 0;
-  left: -1em;
-  color: #979797;
 }
 
 input:focus {
-  outline: 0;
   color: #3F98FF;
   background: #f1f1f1 !important;
+  outline: 0;
 }
 
 .autocomplete a {
-  display: block;
-  padding: 0.5em 0 0.5em 1.25em;
   background: #979797;
   border-bottom: 1px solid #f1f1f1;
   color: #f1f1f1;
+  display: block;
+  padding: 0.5em 0 0.5em 1.25em;
 }
 
 .autocomplete a:hover {
@@ -246,35 +243,28 @@ input:focus {
 }
 
 .results {
-  width: 25.4%;
   float: left;
   padding-right: 1em;
   padding-bottom: 3em;
-
+  width: 25.4%;
 }
 
 .results:last-child {
-  width: 23.75%;
   padding-right: 0;
+  width: 23.75%;
 }
 
 .results img {
+  border: 1px solid #f1f1f1;
+  float: left;
+  left: 0;
+  margin-top: 1em;
   position: relative;
   top: 0;
-  left: 0;
-  float: left;
-  margin-top: 1em;
-  border: 1px solid #f1f1f1;
   transition: top 0.2s, left 0.2s, box-shadow 0.2s;
 }
 
 .results img:hover {
-  position: relative;
-  top: -15px;
-  left: 15px;
-  cursor: pointer;
-  top: -15px;
-  left: 15px;
   box-shadow: -15px 15px 0 #3F98FF,
   -14.5px 14.5px 0 #3F98FF,
   -14px 14px 0 #3F98FF,
@@ -306,6 +296,10 @@ input:focus {
   -1px 1px 0 #3F98FF,
   -0.5px 0.5px 0 #3F98FF;
   border: 1px solid #979797;
+  cursor: pointer;
+  position: relative;
+  top: -15px;
+  left: 15px;
   z-index: 1;
 }
 
@@ -349,8 +343,8 @@ input:focus {
 
 #clear {
   background: transparent;
-  width: 100%;
   padding: 15em 0em;
+  width: 100%;
   z-index: -1;
 }
 
@@ -365,31 +359,31 @@ input:focus {
 .alphabet li {
   display: block;
   float: left;
-  margin: 0.5em 1em 1em 0;
   height: 1.75em;
+  margin: 0.5em 1em 1em 0;
 }
 
 .alphabet li:hover {
+  border-bottom: 4px solid #3F98FF;
   color: #3F98FF;
   cursor: pointer;
-  border-bottom: 4px solid #3F98FF;
 }
 
 .sort li {
   float: left;
-  margin: 0 1em 0 0;
   height: 1.75em;
+  margin: 0 1em 0 0;
 }
 
 .sort li:hover {
+  border-bottom: 4px solid #3F98FF;
   color: #3F98FF;
   cursor: pointer;
-  border-bottom: 4px solid #3F98FF;
 }
 
 .T {
-  color: #3F98FF;
   border-bottom: 4px solid #3F98FF;
+  color: #3F98FF;
 }
 
 #not-sort {
@@ -397,21 +391,14 @@ input:focus {
 }
 
 #not-sort:hover {
-  cursor: default;
   border-bottom: none;
+  cursor: default;
 }
 
 .default {
-  color: #3F98FF;
   border-bottom: 4px solid #3F98FF;
+  color: #3F98FF;
 }
-
-
-
-
-
-
-
 
 
 @media all and (max-width: 1000px) {
@@ -421,8 +408,8 @@ input:focus {
   }
 
   .book:nth-child(4n) {
-    width: 34.1%;
     padding-right: 1em;
+    width: 34.1%;
   }
 
   .book:nth-child(3n) {
@@ -431,10 +418,10 @@ input:focus {
   }
 
   .none img {
-    width: 35%;
-    margin-right: 0.5em;
     clear: both;
+    margin-right: 0.5em;
     margin-top: 2em;
+    width: 35%;
   }
 
   .text {
@@ -469,8 +456,8 @@ input:focus {
 
 header li:first-child {
   background: none;
-  padding-left: 0;
   clear: right;
+  padding-left: 0;
   }
 
 /*  header li:first-child:after {
@@ -478,9 +465,9 @@ header li:first-child {
   }*/
 
   header li:first-child:hover {
-    padding-left: 0;
     background: none;
     background-size: 5em;
+    padding-left: 0;
   }
 
   header li:last-child {
@@ -496,9 +483,9 @@ header li:first-child {
   }
 
   .blue li:first-child {
-   padding-left: 0;
-   background: none;
-   background-size: 0;
+     background: none;
+     background-size: 0;
+     padding-left: 0;
   }
 
   .sort {
@@ -507,14 +494,14 @@ header li:first-child {
 
   .sort li {
     float: left;
-    margin: 2em 1em 1em 0;
     height: 1.75em;
+    margin: 2em 1em 1em 0;
   }
 
   .sort li:hover {
+    border-bottom: 4px solid #3F98FF;
     color: #3F98FF;
     cursor: pointer;
-    border-bottom: 4px solid #3F98FF;
   }
 
   input {
@@ -526,8 +513,8 @@ header li:first-child {
   }
 
   .results {
-    width: 34.2%;
     padding-bottom: 2em;
+    width: 34.2%;
   }
 
   .results:nth-child(4n) {
@@ -564,15 +551,15 @@ header li:first-child {
   }
 
   .none img {
-    width: 90%;
     margin: 1em 5%;
+    width: 90%;
   }
 
   .text {
-    width: 100%;
+    font-size: 20px;
     margin-top: 0;
     padding-bottom: 5em;
-    font-size: 20px;
+    width: 100%;
   }
 
   .sort li {
@@ -584,8 +571,8 @@ header li:first-child {
   }
 
   .text h3 {
-    padding-bottom: 1em;
     font-size: 20px;
+    padding-bottom: 1em;
   }
 
   #added {
@@ -610,8 +597,8 @@ header li:first-child {
   }
 
   .results {
-    width: 53%;
     padding-bottom: 2em;
+    width: 53%;
   }
 
   .results:nth-child(3n) {
@@ -634,13 +621,13 @@ header li:first-child {
 }
 
 .book {
-  width: 53.25%;
   height: auto;
+  width: 53.25%;
 }
 
 .book:nth-child(3n) {
-  padding-right: 1em;
   width: 53.25%;
+  padding-right: 1em;
 }
 
 .book:nth-child(2n) {
